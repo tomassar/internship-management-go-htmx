@@ -3,12 +3,15 @@
 <head>
     <title>HTMX Go App</title>
     <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+    <link rel="stylesheet" href="/tailwind.css" />
 </head>
 <body>
-    <h1>Welcome to the HTMX Go App!</h1>
-    <button hx-get="/internship" hx-target="#internship-info" hx-swap="outerHTML">
-        Show Internship Information
-    </button>
-    <div id="internship-info"></div>
+    <div className="w-full h-full flex justify-center items-center">
+        <h1>Welcome to the HTMX Go App!</h1>
+        <button hx-get="/internships" hx-target="#internships-list" hx-swap="outerHTML">
+            Show Internships
+        </button>
+        <div id="internships-list"></div>
+    </div>
 </body>
 </html>

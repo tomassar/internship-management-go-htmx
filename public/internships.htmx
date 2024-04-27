@@ -1,0 +1,9 @@
+<div>
+    <h2>Internships</h2>
+    {{ range . }}
+    <div>
+        <h3>{{ .title }}</h3>
+        <p>{{ .description }}</p>
+    </div>
+    {{ end }}
+</div>
