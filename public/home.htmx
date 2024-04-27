@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTMX Go App</title>
+    <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+</head>
+<body>
+    <h1>Welcome to the HTMX Go App!</h1>
+    <button hx-get="/internship" hx-target="#internship-info" hx-swap="outerHTML">
+        Show Internship Information
+    </button>
+    <div id="internship-info"></div>
+</body>
+</html>
